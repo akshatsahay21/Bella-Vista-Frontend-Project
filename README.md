@@ -1,2 +1,2 @@
 # Bella-Vista-Frontend-Project
-Frontend Project
+https://cozy-treacle-785fe7.netlify.app/
