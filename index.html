@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Bella Vista - Authentic Italian Restaurant serving fresh pasta, wood-fired pizzas, and traditional Italian cuisine in the heart of the city.">
+        <title>Italian Restaurant</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <nav class="navbar">
+                    <div class="logo">
+                        <h1>Bella Vista</h1>
+                        <span class="tagline">Authentic Italian Cuisine</span>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+
+
+        <main>
+            <section id="home" class="hero">
+                <div class="hero-content">
+                    <h2>Welcome to Bella Vista</h2>
+                    <p>Experience the authentic taste of Italy in the heart of the city.</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary">View Menu</a>
+                        <a href="#contact" class="btn btn-secondary">Make a Reservation</a>
+                    </div>
+
+
+                </div>
+            </section>
+            
+
+
+            <section id="menu" class="menu">
+    <div class="container">
+        <h2 class="section-title">Our Menu</h2>
+        <p class="section-subtitle">Discover our carefully crafted dishes.</p>
+        <script>
+const subtitle = document.querySelector('.section-subtitle');
+
+window.addEventListener('scroll', () => {
+    const scrollPos = window.scrollY + window.innerHeight;
+    const elementPos = subtitle.offsetTop + subtitle.offsetHeight/2;
+
+    if(scrollPos > elementPos) {
+        subtitle.classList.add('animate');
+    }
+});
+</script>
+
+
+        <div class="menu-filter">
+    <button class="filter-btn active" data-category="appetizers">Appetizers</button>
+    <button class="filter-btn" data-category="starters">Starters</button>
+    <button class="filter-btn" data-category="soups">Soups</button>
+    <button class="filter-btn" data-category="salads">Salads</button>
+    <button class="filter-btn" data-category="pasta">Pasta</button>
+    <button class="filter-btn" data-category="pizza">Pizza</button>
+    <button class="filter-btn" data-category="main-course">Main Course</button>
+    <button class="filter-btn" data-category="desserts">Desserts</button>
+    <button class="filter-btn" data-category="beverages">Beverages</button>
+</div>
+
+
+      
+
+        <!-- Appetizers (15) -->
+        <div class="menu-category" data-category="appetizers">
+            <h3>Appetizers</h3>
+            <div class="menu-items">
+                <div class="menu-item"><div class="menu-item-info"><h4>Bruschetta Italiana</h4><p>Grilled bread topped with fresh tomatoes, basil, and mozzarella.</p></div><span class="price">₹599</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Antipasto Platter</h4><p>Assorted cured meats, cheeses, olives, and marinated vegetables.</p></div><span class="price">₹599</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Caprese Skewers</h4><p>Tomato, mozzarella, and basil skewers drizzled with balsamic glaze.</p></div><span class="price">₹400</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Stuffed Mushrooms</h4><p>Mushrooms stuffed with ricotta, herbs, and parmesan cheese.</p></div><span class="price">₹499</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Garlic Bread</h4><p>Freshly baked bread with garlic butter and herbs.</p></div><span class="price">₹399</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Fried Calamari</h4><p>Lightly breaded and fried calamari served with marinara sauce.</p></div><span class="price">₹399</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Prosciutto e Melone</h4><p>Cured ham served with fresh melon slices.</p></div><span class="price">₹399</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Arancini</h4><p>Fried risotto balls stuffed with cheese and herbs.</p></div><span class="price">₹399</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Polenta Fries</h4><p>Crispy polenta sticks served with marinara dipping sauce.</p></div><span class="price">₹299</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Olive & Cheese Plate</h4><p>Selection of marinated olives and Italian cheeses.</p></div><span class="price">₹299</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Mini Meatballs</h4><p>Classic Italian meatballs in rich tomato sauce.</p></div><span class="price">₹399</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Focaccia with Herbs</h4><p>Oven-baked Italian flatbread with rosemary and olive oil.</p></div><span class="price">₹399</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Tomato Basil Crostini</h4><p>Crunchy crostini topped with tomato and fresh basil.</p></div><span class="price">₹299</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Marinated Artichokes</h4><p>Artichoke hearts marinated in olive oil, garlic, and herbs.</p></div><span class="price">₹399</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Caprese Salad Cups</h4><p>Individual cups with cherry tomatoes, mozzarella, and basil.</p></div><span class="price">₹299</span></div>
+            </div>
+        </div>
+
+        <!-- Starters (15) -->
+        <div class="menu-category" data-category="starters">
+            <h3>Starters</h3>
+            <div class="menu-items">
+                <div class="menu-item"><div class="menu-item-info"><h4>Garlic Parmesan Wings</h4><p>Chicken wings tossed in garlic butter and parmesan.</p></div><span class="price">₹399</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Mozzarella Sticks</h4><p>Crispy fried mozzarella served with marinara sauce.</p></div><span class="price">₹399</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Spinach & Artichoke Dip</h4><p>Creamy dip served with toasted bread.</p></div><span class="price">₹399</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Shrimp Scampi</h4><p>Sautéed shrimp in garlic butter and white wine sauce.</p></div><span class="price">₹300</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Prosciutto Wrapped Asparagus</h4><p>Fresh asparagus wrapped in prosciutto and baked.</p></div><span class="price">₹399</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Fried Zucchini</h4><p>Lightly breaded zucchini sticks with marinara.</p></div><span class="price">₹399</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Calamari Fritti</h4><p>Crispy fried calamari with lemon aioli.</p></div><span class="price">₹399</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Italian Sausage Bites</h4><p>Mini sausages served with marinara sauce.</p></div><span class="price">₹399</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Mushroom Risotto Balls</h4><p>Fried risotto balls stuffed with mushrooms and cheese.</p></div><span class="price">₹399</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Tomato Basil Soup</h4><p>Rich tomato soup with fresh basil.</p></div><span class="price">₹399</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Polenta Cakes</h4><p>Pan-seared polenta cakes with parmesan.</p></div><span class="price">₹399</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Mini Caprese Salad</h4><p>Fresh mozzarella, cherry tomatoes, and basil drizzle.</p></div><span class="price">₹399</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Fennel & Orange Salad</h4><p>Fresh fennel with orange slices and olive oil.</p></div><span class="price">₹399</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Italian Flatbread</h4><p>Flatbread with garlic, cheese, and herbs.</p></div><span class="price">₹399</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Mini Meatball Skewers</h4><p>Skewered meatballs served with tomato sauce.</p></div><span class="price">₹399</span></div>
+            </div>
+        </div>
+
+        <!-- Soups (8) -->
+        <div class="menu-category" data-category="soups">
+            <h3>Soups</h3>
+            <div class="menu-items">
+                <div class="menu-item"><div class="menu-item-info"><h4>Minestrone</h4><p>Classic Italian vegetable soup with beans and pasta.</p></div><span class="price">₹299</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Italian Wedding Soup</h4><p>Chicken broth with meatballs, greens, and pasta.</p></div><span class="price">₹299</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Tomato Basil Soup</h4><p>Rich tomato soup with fresh basil.</p></div><span class="price">₹299</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Mushroom Soup</h4><p>Creamy mushroom soup with herbs.</p></div><span class="price">₹299</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Vegetable Soup</h4><p>Fresh vegetables in a light broth.</p></div><span class="price">₹299</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Chicken Soup</h4><p>Homestyle Italian chicken soup with noodles.</p></div><span class="price">₹299</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Pumpkin Soup</h4><p>Creamy pumpkin soup with a hint of nutmeg.</p></div><span class="price">₹299</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Seafood Soup</h4><p>Italian seafood stew with tomatoes and herbs.</p></div><span class="price">₹299</span></div>
+            </div>
+        </div>
+
+        <!-- Salads (10) -->
+        <div class="menu-category" data-category="salads">
+            <h3>Salads</h3>
+            <div class="menu-items">
+                <div class="menu-item"><div class="menu-item-info"><h4>Caprese Salad</h4><p>Tomatoes, fresh mozzarella, basil, balsamic glaze.</p></div><span class="price">₹199</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Caesar Salad</h4><p>Romaine lettuce with Caesar dressing, croutons, parmesan.</p></div><span class="price">₹199</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Italian Chopped Salad</h4><p>Lettuce, salami, mozzarella, cherry tomatoes, olives.</p></div><span class="price">₹199</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Arugula & Parmesan</h4><p>Fresh arugula with shaved parmesan and lemon vinaigrette.</p></div><span class="price">₹199</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Panzanella Salad</h4><p>Italian bread salad with tomatoes, cucumber, and herbs.</p></div><span class="price">₹199</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Spinach & Strawberry</h4><p>Spinach with strawberries, feta, and balsamic reduction.</p></div><span class="price">₹199</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Greek-Italian Salad</h4><p>Olives, tomatoes, cucumber, feta cheese, oregano.</p></div><span class="price">₹199</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Antipasto Salad</h4><p>Salami, mozzarella, olives, peppers, Italian dressing.</p></div><span class="price">₹199</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Fennel & Orange Salad</h4><p>Fresh fennel with orange slices and olive oil.</p></div><span class="price">₹199</span></div>
+                <div class="menu-item"><div class="menu-item-info"><h4>Roasted Beet Salad</h4><p>Beets, goat cheese, walnuts, and vinaigrette.</p></div><span class="price">₹199</span></div>
+            </div>
+        </div>
+
+        <div class="menu-category" data-category="pasta">
+    <h3>Pasta</h3>
+    <div class="menu-items">
+        <div class="menu-item"><div class="menu-item-info"><h4>Spaghetti Carbonara</h4><p>Classic Roman pasta with eggs, pancetta, and parmesan.</p></div><span class="price">₹499</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Fettuccine Alfredo</h4><p>Rich creamy sauce with parmesan and butter.</p></div><span class="price">₹499</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Penne Arrabbiata</h4><p>Penne pasta in a spicy tomato sauce with garlic and chili.</p></div><span class="price">₹499</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Lasagna al Forno</h4><p>Layered pasta with meat sauce, béchamel, and cheese.</p></div><span class="price">₹499</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Ravioli di Ricotta</h4><p>Homemade ravioli stuffed with ricotta and spinach in tomato sauce.</p></div><span class="price">₹499</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Gnocchi Sorrentina</h4><p>Potato gnocchi baked with tomato sauce and mozzarella.</p></div><span class="price">₹499</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Spaghetti Bolognese</h4><p>Classic spaghetti with rich meat sauce.</p></div><span class="price">₹499</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Tagliatelle al Pesto</h4><p>Fresh tagliatelle with basil pesto, pine nuts, and parmesan.</p></div><span class="price">₹499</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Seafood Linguine</h4><p>Linguine with shrimp, mussels, clams, and garlic white wine sauce.</p></div><span class="price">₹499</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Spinach & Ricotta Cannelloni</h4><p>Tube-shaped pasta stuffed with ricotta and spinach, baked with tomato sauce.</p></div><span class="price">₹499</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Pasta Primavera</h4><p>Fresh seasonal vegetables with penne in light tomato sauce.</p></div><span class="price">₹499</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Fettuccine Alfredo with Chicken</h4><p>Fettuccine pasta with creamy sauce and grilled chicken.</p></div><span class="price">₹499</span></div>
+    </div>
+</div>
+ 
+<div class="menu-category" data-category="pizza">
+    <h3>Pizza</h3>
+    <div class="menu-items">
+        <div class="menu-item"><div class="menu-item-info"><h4>Margherita</h4><p>Classic pizza with tomato, mozzarella, and fresh basil.</p></div><span class="price">₹599</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Pepperoni</h4><p>Tomato sauce, mozzarella, and spicy pepperoni slices.</p></div><span class="price">₹599</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Quattro Formaggi</h4><p>Four cheese pizza with mozzarella, gorgonzola, parmesan, and ricotta.</p></div><span class="price">₹599</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Vegetariana</h4><p>Loaded with seasonal vegetables, tomato sauce, and mozzarella.</p></div><span class="price">₹599</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Diavola</h4><p>Spicy salami, chili, tomato sauce, and mozzarella.</p></div><span class="price">₹599</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Prosciutto e Funghi</h4><p>Ham and mushrooms with mozzarella and tomato sauce.</p></div><span class="price">₹599</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Capricciosa</h4><p>Mozzarella, ham, mushrooms, artichokes, olives.</p></div><span class="price">₹599</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Seafood Pizza</h4><p>Shrimp, calamari, and mussels with mozzarella and tomato sauce.</p></div><span class="price">₹599</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>BBQ Chicken Pizza</h4><p>Grilled chicken, BBQ sauce, red onions, and mozzarella.</p></div><span class="price">₹599</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Spinach & Ricotta Pizza</h4><p>Fresh spinach, ricotta, mozzarella, and garlic.</p></div><span class="price">₹599</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Mushroom Truffle Pizza</h4><p>Mixed mushrooms with truffle oil and mozzarella.</p></div><span class="price">₹599</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Four Seasons Pizza</h4><p>Ham, mushrooms, olives, artichokes, mozzarella.</p></div><span class="price">₹599</span></div>
+    </div>
+</div>
+<div class="menu-category" data-category="main-course">
+    <h3>Main Course</h3>
+    <div class="menu-items">
+        <div class="menu-item"><div class="menu-item-info"><h4>Chicken Parmigiana</h4><p>Breaded chicken baked with tomato sauce and mozzarella.</p></div><span class="price">₹499</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Veal Marsala</h4><p>Veal medallions with mushroom and Marsala wine sauce.</p></div><span class="price">₹499</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Osso Buco</h4><p>Braised veal shank served with gremolata and risotto.</p></div><span class="price">₹499</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Chicken Piccata</h4><p>Chicken in lemon, butter, and caper sauce.</p></div><span class="price">₹499</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Grilled Salmon</h4><p>Salmon fillet with lemon butter sauce.</p></div><span class="price">₹499</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Lamb Chops</h4><p>Grilled lamb chops with rosemary and garlic.</p></div><span class="price">₹499</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Seafood Risotto</h4><p>Creamy risotto with shrimp, scallops, and mussels.</p></div><span class="price">₹499</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Chicken Cacciatore</h4><p>Chicken braised with tomatoes, onions, and peppers.</p></div><span class="price">₹499</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Grilled Steak Florentine</h4><p>Classic Tuscan-style grilled T-bone steak.</p></div><span class="price">₹499</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Eggplant Parmigiana</h4><p>Baked eggplant with tomato sauce and mozzarella.</p></div><span class="price">₹499</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Linguine with Clams</h4><p>Fresh linguine with clams, garlic, and white wine sauce.</p></div><span class="price">₹499</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Stuffed Chicken Breast</h4><p>Chicken breast stuffed with spinach, ricotta, and herbs.</p></div><span class="price">₹499</span></div>
+    </div>
+</div>
+
+<div class="menu-category" data-category="desserts">
+    <h3>Desserts</h3>
+    <div class="menu-items">
+        <div class="menu-item"><div class="menu-item-info"><h4>Tiramisu</h4><p>Classic Italian dessert with mascarpone, coffee, and cocoa.</p></div><span class="price">₹249</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Panna Cotta</h4><p>Creamy dessert served with berry coulis.</p></div><span class="price">₹249</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Gelato Trio</h4><p>Three scoops of Italian gelato in different flavors.</p></div><span class="price">₹249</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Chocolate Lava Cake</h4><p>Warm chocolate cake with a molten center.</p></div><span class="price">₹249</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Cannoli</h4><p>Crispy pastry filled with sweet ricotta and chocolate chips.</p></div><span class="price">₹249</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Affogato</h4><p>Vanilla gelato "drowned" in hot espresso.</p></div><span class="price">₹249</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Ricotta Cheesecake</h4><p>Light Italian cheesecake with ricotta and citrus zest.</p></div><span class="price">₹249</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Amaretto Cake</h4><p>Moist almond-flavored cake with cream sauce.</p></div><span class="price">₹249</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Fruit Tart</h4><p>Shortcrust pastry filled with custard and topped with fresh fruit.</p></div><span class="price">₹249</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Lemon Sorbet</h4><p>Refreshing lemon sorbet, perfect after a heavy meal.</p></div><span class="price">₹249</span></div>
+    </div>
+</div>
+<div class="menu-category" data-category="beverages">
+    <h3>Beverages</h3>
+    <div class="menu-items">
+        <div class="menu-item"><div class="menu-item-info"><h4>Espresso</h4><p>Classic Italian espresso shot.</p></div><span class="price">₹299</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Americano</h4><p>Espresso with hot water.</p></div><span class="price">₹199</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Cappuccino</h4><p>Espresso with steamed milk and foam.</p></div><span class="price">₹299</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Latte</h4><p>Espresso with steamed milk and light foam.</p></div><span class="price">₹299</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Mineral Water</h4><p>Still or sparkling mineral water.</p></div><span class="price">₹99</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Italian Soda</h4><p>Flavored soda with a splash of sparkling water.</p></div><span class="price">₹299</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Red Wine</h4><p>Glass of house red wine.</p></div><span class="price">₹799</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>White Wine</h4><p>Glass of house white wine.</p></div><span class="price">₹799</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Italian Lemonade</h4><p>Freshly made lemonade with a hint of mint.</p></div><span class="price">₹599</span></div>
+        <div class="menu-item"><div class="menu-item-info"><h4>Hot Chocolate</h4><p>Rich Italian hot chocolate.</p></div><span class="price">₹499</span></div>
+    </div>
+</div>
+
+        <!-- You can continue adding Pasta, Pizza, Main Course, Desserts, Beverages in the same way -->
+    </div>
+</section>
+
+<script>
+const filterButtons = document.querySelectorAll('.filter-btn');
+const menuCategories = document.querySelectorAll('.menu-category');
+
+// Hide all categories except the first one on page load
+menuCategories.forEach((cat, index) => {
+    cat.style.display = index === 0 ? 'block' : 'none';
+});
+
+filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const category = btn.getAttribute('data-category');
+
+        menuCategories.forEach(cat => {
+            if(cat.getAttribute('data-category') === category){
+                cat.style.display = 'block';
+            } else {
+                cat.style.display = 'none';
+            }
+        });
+    });
+});
+</script>
+
+
+            <section id="about" class="about">
+                <div class="container">
+                    <h2 class="section-title">About Bella Vista</h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <h3>Our Story</h3>
+                            <p>Founded in 1985 by the Rossi Family. Bella Vista has been serving authentic Italian cuisine for over three decades. Our passion for traditional recipies and fresh ingredients has been made us a beloved destination for food lovers.</p>
+                            <p>Every dish is prepared with love and attention to detail, using recipies passed down through generations of Italian chefs.</p>
+
+                        </div>
+                        <div class="about-image">
+                        <img src="https://wallpaperaccess.com/full/3014715.jpg" alt="Restaurant Interior">
+                    </div>
+                    </div>
+
+                    
+                </div>
+            </section>
+
+            <section id="contact" class="contact">
+                <div class="container">
+                    <h2 class="section-title">Contact Us</h2>
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <h3>Get in Touch</h3>
+
+                            <div class="contact-item">
+                                <strong>Address:</strong>
+                                <p>123 Bella Vista St, Foodie City, FC 12345</p>
+                            </div>
+                            <div class="contact-item">
+                                <strong>Phone:</strong>
+                                <p>(123) 456-7890</p>
+                            </div>
+                            <div class="contact-item">
+                                <strong>Email:</strong>
+                                <p>info@bellavista.com</p>
+                            </div>
+                        </div>
+
+
+                        <div class="contact-form">
+                            <h3>Make a Reservation</h3>
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Full Name:</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone">Phone:</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="date">Reservation Date:</label>
+                                    <input type="date" id="date" name="date" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="time">Time:</label>
+                                   <select id="time" name="time" required>
+                                    <option value="">Select Time</option>
+                                    <option value="6:00 PM">6:00 PM</option>
+                                    <option value="7:00 PM">7:00 PM</option>
+                                    <option value="8:00 PM">8:00 PM</option>
+                                    <option value="9:00 PM">9:00 PM</option>
+                                   </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="guests">Number of Guests:</label>
+                                   <select id="guests" name="guests" required>
+                                    <option value="">Select Number of Guests</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5+</option>
+                                   </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="special">Special Requests:</label>
+                                    <textarea id="special" name="special" rows="4" placeholder="Any special requests?"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Submit Reservation</button>
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+
+                    <div class="footer-section">
+                        <h3>Bella Vista</h3>
+                        <p>Authentic Italian Cuisine in the Heart of the City. Experience the taste of Italy with every bite.</p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Opening Hours</h4>
+                        <p>Monday - Friday: 11:00 AM - 10:00 PM</p>
+                        <p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Facebook</a>
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">Instagram</a>
+                            
+                    </div>
+                    <div class="footer-bottom">
+                    <p>&copy; 2025 Bella Vista. All rights reserved.</p>
+            </div>
+                </div>
+                
+        </footer>
+    </body>
+
+</html> 
